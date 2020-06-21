@@ -1,0 +1,10 @@
+import numpy as np
+import cv2
+
+b = np.zeros([300,300],dtype = 'uint8')
+b[0:150,0:150] = 255
+b[150:300,150:300] = 255
+
+cv2.imshow('Checkerboard',b)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
